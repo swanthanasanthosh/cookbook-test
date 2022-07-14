@@ -1,23 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-const recipes = [
-  {
-    author: "Jim",
-    name: "Chicken Curry",
-    description: "Delicious spicy chicken curry"
-  },
-  {
-    author: "Aravind",
-    name: "Hamburger",
-    description: "Juicy burger with toppings and a soft bun",
-  }
-]
+import React from "react";
+import "./styles.css";
+import MyHeader from "./components/Header";
+import MyFooter from "./components/Footer";
+import MyRecipe from "./components/Recipe";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        backgroundImage: "url(http://localhost:3000/wallpaper.png)",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <MyHeader />
+      <MyRecipe />
+      <MyFooter />
     </div>
   );
 }
